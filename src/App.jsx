@@ -5,11 +5,16 @@ const App = () => {
     <div className='app'>
       <main className='main'>
         <div className="profile">
-          <img src="/img/profile_pic.jpeg" alt="" id="profile__img" />
+          <img src="/img/profile_pic.jpeg" alt="" id="profile__img" draggable="false" />
           <p id="twitter">michaelsondev</p>
           <p id="slack">oluseun.akintayo@gmail.com</p>
+          <img src="/img/share.png" alt="share-btn" id="share-btn" draggable="false" />
         </div>
         <div className="links">
+          <a href="https://twitter.com/michaelsondev">
+            <p className="title">Twitter</p>
+            {/* <p className="subtext">Begin your tech journey here</p> */}
+          </a>
           <a href="https://training.zuri.team/">
             <p className="title">Zuri Training</p>
             <p className="subtext">Begin your tech journey here</p>
@@ -31,6 +36,15 @@ const App = () => {
             <p className="subtext">An amazing design book from the Zuri Team</p>
           </a>
         </div>
+        <div className="icons">
+          <img src="/img/slack.png" alt="slack-logo" draggable="false" />
+          <img src="/img/github.png" alt="github-logo" draggable="false" />
+        </div>
+        <footer>
+          <img src="/img/logo.png" alt="logo" className='footer-logo' draggable="false" />
+          <p>HNG Internship 9 Frontend Task</p>
+          <img src="/img/I4G.png" alt="I4G" className='i4g-logo' draggable="false" />
+        </footer>
       </main>
     </div>
   )

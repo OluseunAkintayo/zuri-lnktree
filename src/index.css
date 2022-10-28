@@ -15,6 +15,7 @@
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
+  padding: 5%;
 }
 
 .profile {
@@ -23,12 +24,25 @@
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 2rem;
+  position: relative;
+}
+
+#share-btn {
+  position: absolute;
+  top: 10%;
+  right: 1%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+#share-btn:hover {
+  transform: scale(1.05);
 }
 
 #profile__img {
   border-radius: 50%;
-  width: 300px;
+  width: 225px;
 }
 
 #twitter, #slack {
@@ -50,13 +64,14 @@
   color: #101828;
   height: 96px;
   text-decoration: none;
-  transition: opacity ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
   display: flex;
   gap: 0.5rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0.25rem 1rem;
+  border-radius: 0.375rem;
 }
 
 .links a .title {
@@ -66,8 +81,42 @@
 
 .links a .subtext {
   font-size: 0.875rem;
+  text-align: center;
 }
 
 .links a:hover {
-  opacity: 0.6;
+  opacity: 0.8;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.icons {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgb(243, 244, 245);
+}
+
+footer p {
+  flex: 1;
+  text-align: center;
+}
+
+footer img {
+  width: 140px;
+}
+
+@media(max-width: 600px) {
+  footer {
+    flex-direction: column;
+    align-items: start;
+  }
 }
