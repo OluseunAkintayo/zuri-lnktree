@@ -38,7 +38,9 @@ const App = () => {
         </div>
         <div className="icons">
           <img src="/img/slack.png" alt="slack-logo" draggable="false" />
-          <img src="/img/github.png" alt="github-logo" draggable="false" />
+          <a href="https://github.com/OluseunAkintayo" target="_blank">
+            <img src="/img/github.png" alt="github-logo" draggable="false" />
+          </a>
         </div>
         <footer>
           <img src="/img/logo.png" alt="logo" className='footer-logo' draggable="false" />
