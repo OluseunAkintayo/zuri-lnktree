@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -35,6 +36,9 @@ const Home = () => {
             <p className="title">The Rules of Design</p>
             <p className="subtext">An amazing design book from the Zuri Team</p>
           </a>
+          <Link to="/contact" id="contact">
+            <p className="title">Contact</p>
+          </Link>
         </div>
         <div className="icons">
           <img src="/img/slack.png" alt="slack-logo" draggable="false" />
