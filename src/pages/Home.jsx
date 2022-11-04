@@ -37,7 +37,7 @@ const Home = () => {
             <p className="subtext">An amazing design book from the Zuri Team</p>
           </a>
           <Link to="/contact" id="contact">
-            <p className="title">Contact</p>
+            <p className="title">Contact Me</p>
           </Link>
         </div>
         <div className="icons">
