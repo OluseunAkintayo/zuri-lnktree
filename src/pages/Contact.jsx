@@ -13,7 +13,6 @@ const Contact = () => {
 
 	const submit = (e) => {
 		e.preventDefault();
-		console.log(formData);
 		if(formData.firstName.trim() === '') {
 			document.getElementById("first_name").focus();
 			setError({...error, firstName: 'Required'});
