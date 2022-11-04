@@ -224,6 +224,12 @@ footer img {
   opacity: 80%;
 }
 
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
 @media(max-width: 480px) {
   .contact-name {
     flex-direction: column;
